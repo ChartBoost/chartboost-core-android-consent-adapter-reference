@@ -1,0 +1,1 @@
+# chartboost-core-android-consent-adapter-reference
