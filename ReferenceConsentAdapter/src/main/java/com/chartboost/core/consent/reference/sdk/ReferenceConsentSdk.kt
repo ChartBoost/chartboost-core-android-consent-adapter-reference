@@ -28,6 +28,10 @@ object ReferenceConsentSdk {
      */
     var referenceConsentStatus = ConsentValues.DENIED
 
+    /**
+     * This shows a concise dialog that usually only has the grant/deny buttons. The reference
+     * SDK doesn't have any real UI to show this, but use your imagination on what it could look like!
+     */
     fun showConciseDialog(context: Context) {
         val alertDialogBuilder = AlertDialog.Builder(context)
         alertDialogBuilder.setTitle("Concise Dialog Shown!")
@@ -38,6 +42,11 @@ object ReferenceConsentSdk {
         alertDialogBuilder.show()
     }
 
+    /**
+     * This shows a detailed dialog that usually has every vendor or purpose and detailed information
+     * about each. The reference SDK doesn't have any real UI to show this, but feel free to use your
+     * imagination on what it could look like!
+     */
     fun showDetailedDialog(context: Context) {
         val alertDialogBuilder = AlertDialog.Builder(context)
         alertDialogBuilder.setTitle("Detailed Dialog Shown!")
