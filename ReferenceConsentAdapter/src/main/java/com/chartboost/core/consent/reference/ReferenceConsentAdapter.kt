@@ -33,7 +33,7 @@ class ReferenceConsentAdapter() : ConsentAdapter, Module {
         /**
          * Please use a unique module identifier.
          */
-        const val moduleId = "reference_consent"
+        const val moduleId = "reference"
 
         /**
          * The consent adapter version.
