@@ -10,7 +10,13 @@ package com.chartboost.core.consent.reference
 import android.app.Activity
 import android.content.Context
 import com.chartboost.core.ChartboostCoreLogger
-import com.chartboost.core.consent.*
+import com.chartboost.core.consent.ConsentAdapter
+import com.chartboost.core.consent.ConsentAdapterListener
+import com.chartboost.core.consent.ConsentDialogType
+import com.chartboost.core.consent.ConsentKey
+import com.chartboost.core.consent.ConsentKeys
+import com.chartboost.core.consent.ConsentSource
+import com.chartboost.core.consent.ConsentValue
 import com.chartboost.core.consent.reference.sdk.ReferenceConsentSdk
 import com.chartboost.core.error.ChartboostCoreError
 import com.chartboost.core.error.ChartboostCoreException
@@ -33,7 +39,7 @@ class ReferenceConsentAdapter() : ConsentAdapter, Module {
         /**
          * Please use a unique module identifier.
          */
-        const val moduleId = "reference"
+        const val moduleId = "reference_consent_adapter"
 
         /**
          * The consent adapter version.
