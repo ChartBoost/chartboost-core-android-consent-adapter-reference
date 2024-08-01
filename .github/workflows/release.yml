@@ -6,7 +6,7 @@ on:
       - 'v[0-9]+.[0-9]+.[0-9]+.[0-9]+.[0-9]+'
 
 jobs:
-  usercentrics-release:
+  reference-release:
     # Always run on the m1 self-hosted runner.
     runs-on: ubuntu-latest
     environment: CI
