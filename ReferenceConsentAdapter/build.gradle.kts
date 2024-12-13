@@ -28,11 +28,11 @@ repositories {
 
 android {
     namespace = "com.chartboost.core.consent.reference"
-    compileSdk = 34
+    compileSdk = 33
 
     defaultConfig {
         minSdk = 21
-        targetSdk = 34
+        targetSdk = 33
         // If you touch the following line, don't forget to update scripts/get_rc_version.zsh
         android.defaultConfig.versionName = System.getenv("VERSION_OVERRIDE") ?: "1.1.0.0.0"
 
@@ -85,7 +85,7 @@ dependencies {
     "candidateImplementation"("com.chartboost:chartboost-core-sdk:1.0.0")
 
     // Adapter Dependencies
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1")
 }
 
